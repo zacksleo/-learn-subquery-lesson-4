@@ -1,0 +1,10 @@
+type Transfer @entity {
+  id: ID! #block height + event id
+  from: String!
+  to: Account!
+  amount: BigInt!
+}
+
+type Account @entity {
+  id: ID! #account_id
+}
